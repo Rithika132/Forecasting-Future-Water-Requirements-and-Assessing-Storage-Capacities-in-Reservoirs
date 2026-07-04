@@ -19,8 +19,39 @@ Features
 
 •Helps improve water resource planning.
 
-
 Technologies Used
-•HTML
-•CSS
-•JavaS
+
+▪︎HTML
+
+▪︎CSS
+
+▪︎JavaScript
+
+▪︎Node.js
+
+▪︎Express.js
+
+▪︎JSON (Data Storage)
+
+Project Structure
+
+water-reservoir-app/
+
+├── server.js
+
+├── engine.js
+
+├── package.json
+
+├── data/
+
+│   └── history.json
+
+└── public/
+
+    ├── index.html
+
+    ├── style.css
+
+    └── script.js
+
