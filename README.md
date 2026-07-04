@@ -8,11 +8,17 @@ DESCRIPTION :
 Features
 
 •Forecast future water demand.
+
 •Assess reservoir storage capacity.
+
 •User-friendly web interface.
+
 •Displays forecast results instantly.
+
 •Stores forecast history.
+
 •Helps improve water resource planning.
+
 
 Technologies Used
 •HTML
