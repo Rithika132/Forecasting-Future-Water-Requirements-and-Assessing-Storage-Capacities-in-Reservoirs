@@ -5,7 +5,7 @@ DESCRIPTION :
 
  This project is designed to predict future water demand and evaluate whether reservoir storage is sufficient to meet that demand. It analyzes historical data such as rainfall, water consumption, reservoir water levels, and population growth to estimate future water requirements.
 
-Features
+Features:
 
 •Forecast future water demand.
 
@@ -35,7 +35,7 @@ Technologies Used
 ▪︎JSON (Data Storage)
 
 
-Project Structure
+Project Structure:
 
 water-reservoir-app/
 
@@ -58,7 +58,7 @@ water-reservoir-app/
     └── script.js
 
 
-Installation Steps
+Installation Steps:
 
 1.Download or clone the repository.
 
@@ -85,7 +85,7 @@ node server.js
 http://localhost:3000
 
 
-How to Use
+How to Use:
 
 1.Launch the application.
 
@@ -98,7 +98,7 @@ How to Use
 5.View the predicted water requirement and storage assessment.
 
 
-Advantages
+Advantages:
 
 •Easy to use.
 
@@ -111,7 +111,7 @@ Advantages
 •Simple and lightweight application.
 
 
-Future Enhancements
+Future Enhancements:
 
 •Integration with live weather data.
 
