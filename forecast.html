@@ -1,43 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Water Forecast</title>
-    <link rel="stylesheet" href="style.css">
+<title>Water Forecast</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <h1>Water Forecast</h1>
 
-<div class="forecast-box">
-    <h3>Population 1</h3>
-    <input type="number" placeholder="Population"><br><br>
-    <input type="number" placeholder="Water Demand Per Person (Litres)"><br><br>
-    <input type="number" placeholder="Year"><br><br>
-</div>
+<input type="number" id="population" placeholder="Population"><br><br>
 
-<div class="forecast-box">
-    <h3>Population 2</h3>
-    <input type="number" placeholder="Population"><br><br>
-    <input type="number" placeholder="Water Demand Per Person (Litres)"><br><br>
-    <input type="number" placeholder="Year"><br><br>
-</div>
+<input type="number" id="demand" placeholder="Water Demand Per Person"><br><br>
 
-<div class="forecast-box">
-    <h3>Population 3</h3>
-    <input type="number" placeholder="Population"><br><br>
-    <input type="number" placeholder="Water Demand Per Person (Litres)"><br><br>
-    <input type="number" placeholder="Year"><br><br>
-</div>
+<input type="number" id="years" placeholder="Years"><br><br>
 
-<div class="forecast-box">
-    <h3>Population 4</h3>
-    <input type="number" placeholder="Population"><br><br>
-    <input type="number" placeholder="Water Demand Per Person (Litres)"><br><br>
-    <input type="number" placeholder="Year"><br><br>
-</div>
-
-<button>Forecast</button>
+<button onclick="calculate()">Forecast</button>
 
 <div id="result"></div>
 
