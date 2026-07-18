@@ -1,22 +1,24 @@
-function calculate() {
+async function calculate() {
 
-    let population = Number(document.getElementById("population").value);
-    let demand = Number(document.getElementById("demand").value);
-    let years = Number(document.getElementById("years").value);
+    const population = Number(document.getElementById("population").value);
+    const demandPerPerson = Number(document.getElementById("demand").value);
+    const years = Number(document.getElementById("years").value);
 
-    if (population === 0 || demand === 0 || years === 0) {
-        alert("Please enter all values");
-        return;
-    }
+    const response = await fetch("/forecast", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            population,
+            demandPerPerson,
+            years
+        })
+    });
 
-    let growthRate = 0.02;
-
-    let futurePopulation = population * Math.pow(1 + growthRate, years);
-
-    let waterDemand = futurePopulation * demand;
+    const data = await response.json();
 
     document.getElementById("result").innerHTML =
-        "Future Population : " + Math.round(futurePopulation) +
-        "<br><br>Estimated Water Demand : " +
-        Math.round(waterDemand) + " Litres";
+        "Future Population: " + data.futurePopulation +
+        "<br>Water Demand: " + data.waterDemand + " Litres";
 }
